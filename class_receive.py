@@ -4,8 +4,8 @@ import pygame
 from pygame.locals import *
 from class_constant import Constant as Cst
 
-class Recieve:
-    def recieve(self=None):
+class Receive:
+    def receive(self=None):
         for event in pygame.event.get():
             # キーボード操作
             if event.type == KEYDOWN:
