@@ -4,7 +4,7 @@ from collections import deque
 import pygame
 from pygame.locals import *
 from class_material import *
-from class_recieve import *
+from class_receive import *
 from class_constant import Constant as Cst
 
 def main():
@@ -33,7 +33,7 @@ def main():
             screen.blit(img, rect)
         
         pygame.display.update()
-        tmp = Recieve.recieve()
+        tmp = Receive.receive()
         if not (tmp is None):
             if type(tmp) == str:
                 if selector and tmp == "rotate":
