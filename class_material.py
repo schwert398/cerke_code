@@ -53,10 +53,8 @@ class Piece:
         return piece_img
 
 class Space:
-    def __init__(self, red, green, blue):
-        self.color = (red, green, blue)
-    
-    def load(self):    # colorで塗りつぶした画像のRectを返す
-        spc = pygame.Surface((210, 631))
-        spc.fill(self.color)
+    @staticmethod
+    def load(color):    # colorで塗りつぶした画像のRectを返す
+        spc = pygame.Surface(Cst.space_size)
+        spc.fill(color)
         return spc

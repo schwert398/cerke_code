@@ -8,7 +8,7 @@ class Process:
     # キー操作の処理
     @staticmethod
     def process_str(signal, board_info, piece_img, undo_repository, 
-                    msg_queue, turn, selector, choosing, score):
+                    msg_queue, turn, selector, choosing, score, rate):
         if selector and signal == "rotate":
             for img, rect in piece_img:
                 if choosing[1] is rect:
@@ -37,6 +37,10 @@ class Process:
             score += 1
         if signal == "minus":
             score -= 1
+        if signal == "decrease":
+            rate -= 1
+        if signal == "increase":
+            rate += 1
         if signal == "initialize":
             board_info.append(list(Cst.init_pos))
             undo_repository.clear()
@@ -47,7 +51,7 @@ class Process:
             for _ in range(5):
                 ret += randint(0, 1)
             msg_queue.append(str(ret))
-        return board_info, undo_repository, msg_queue, turn, selector, choosing, score
+        return board_info, undo_repository, msg_queue, turn, selector, choosing, score, rate
     # マウス操作の処理
     @staticmethod
     def process_tuple(signal, board_info, piece_img, undo_repository, 
