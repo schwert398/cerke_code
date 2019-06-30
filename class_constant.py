@@ -20,19 +20,16 @@ class Constant:
     board_size = (631, 631)
     space_size = (210, 631)
     # 表示されるメッセージの位置
-<<<<<<< HEAD
     message_pos = ((10, 481), (10, 511), (10, 541), (10, 571), (10, 601))
     cond_name_pos = ((851, 7), (10, 7), (851, 601), (851, 37), (851, 67), (851, 137))
     parameter_pos = ((905, 7), (111, 7), (971, 601), (915, 37))
     # 表示するメッセージ(cond_infoのみ)
     cond_list = ("turn:", "red score:", "black score:", "rate:  x","choosing:", "point:")
-=======
     message_pos = ((10, 481), (10, 511), (10, 541), (10, 571), (10, 601))   # 左下のログの場所
     cond_name_pos = ((851, 7), (10, 7), (851, 601), (851, 37) ,(851, 67), (851, 137))  # cond_listの場所
     parameter_pos = ((905, 7), (111, 7), (971, 601), (915, 37))    # parameter_list(main内に記述)の場所
     # 常時表示するメッセージ
     cond_list = ("turn:", "red score:", "black score:", "rate:  x", "choosing:", "point:")
->>>>>>> e70215df14cea40b20ad1031d0876e271300adcb
     # 環境依存でないもの
     # 駒の名前・色・向き
     name = ("tam", "io", "uai", "tuk", "kua", "maun", "dau", "kaun", "gua", "kauk", "nuak")
