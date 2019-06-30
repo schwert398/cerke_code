@@ -26,11 +26,7 @@ def main():
 
     # パラメータの生成
     rate = 1    # 点数レート
-<<<<<<< HEAD
     score = 20          # 黒王側のスコア
-=======
-    red_score = 20          # 赤王側のスコア
->>>>>>> e70215df14cea40b20ad1031d0876e271300adcb
     selector = False    # 選択中か
     choosing = None     # 選択しているのが何か(これはindexとRectのtupleオブジェクト)
     colliding = False   # 移動先に駒が既に存在するか
@@ -42,11 +38,8 @@ def main():
         screen.blit(piece_space, (0, 0))
         screen.blit(piece_space, (841, 0))
         
-<<<<<<< HEAD
         parameter_list = [Cst.turn[turn], str(score), str(40-score), str(rate)]    # 常時表示するパラメータ(全てstrオブジェクト)
-=======
-        parameter_list = [Cst.turn[turn], str(red_score), str(40-red_score), str(rate)]    # 常時表示するパラメータ(全てstrオブジェクト)
->>>>>>> e70215df14cea40b20ad1031d0876e271300adcb
+        
         for point, img_list in zip(board_info[-1], piece_img):
             img_list[1].center = point
         for img, rect in piece_img:
@@ -77,13 +70,8 @@ def main():
             ret = Process.process_tuple(tmp, board_info, piece_img, undo_repository, msg_queue, turn, selector, choosing)
             board_info, undo_repository, msg_queue, turn, selector, choosing = ret
         elif type(tmp) == str:
-<<<<<<< HEAD
             ret = Process.process_str(tmp, board_info, piece_img, undo_repository, msg_queue, turn, selector, choosing, score, rate)
             board_info, undo_repository, msg_queue, turn, selector, choosing, score, rate = ret
-=======
-            ret = Process.process_str(tmp, board_info, piece_img, undo_repository, msg_queue, turn, selector, choosing, red_score, rate)
-            board_info, undo_repository, msg_queue, turn, selector, choosing, red_score, rate = ret
->>>>>>> e70215df14cea40b20ad1031d0876e271300adcb
 
 if __name__ == "__main__":
     main()
