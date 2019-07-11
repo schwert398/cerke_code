@@ -1,0 +1,9 @@
+{
+    "language":"select from english or lineparine.(all lower)", 
+    "language":"english",
+    
+    "game":{
+        "first_hand":"black", 
+        "your_color":"black"
+    }
+}
