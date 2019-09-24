@@ -1,0 +1,34 @@
+{
+    "FontFile":"pek_tak.ttf", 
+    "FontSize":40, 
+    
+    "caption":"cet1 kaik", 
+
+    "black":"huok2", 
+    "red":"kok1", 
+    
+    "turn":["kia1:", [851, 7]], 
+    "red_score":["kok1 mak2:", [10, 7]], 
+    "black_score":["huok2 mak2:", [851, 582]], 
+    "rate":["xot mak2:", [851, 54]], 
+    "choosing":["aim2 hop1:", [851, 101]], 
+    "point":["hue:", [851, 187]], 
+
+    "piece_space":["hop1 zuo1:", [929, 187]], 
+    "none":["mun1:", [929, 187]], 
+
+    "oldest":["mun1 py mok1 sau2"], 
+    "newest":["mun1 py mok1 ut"],
+    "colliding":["mun1 py mok1 zuo1"], 
+
+    "get?":["get ?", [115, 20]], 
+    "again?":["ty mok1 ?", [90, 20]], 
+    "reset?":["ta xot ?", [90, 20]], 
+    
+    "Yes":["aim2", [115, 20]], 
+    "No":["mun1", [115, 20]], 
+
+    "massage_pos":[[10, 394], [10, 441], [10, 488], [10, 535], [10, 582]], 
+    "parameter_pos":[[116, 12], [971, 587], [970, 63]], 
+    "image_pos":[[949, 77]]
+}

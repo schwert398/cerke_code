@@ -1,0 +1,37 @@
+{
+    "FontFile":"yugothicmediumyugothicuiregular", 
+    "FontSize":20,
+
+    "caption":"cerke", 
+    
+    "black":"black", 
+    "red":"red", 
+
+    "turn":["turn:", [919, 7]], 
+    "red_score":["red score:", [10, 7]], 
+    "black_score":["black score:", [919, 601]], 
+    "rate":["rate:", [919, 37]], 
+    "choosing":["choosing:", [919, 67]], 
+    "point":["point:", [919, 137]], 
+
+    "piece_space":["piece space", [977, 137]], 
+    "none":["none", [977, 137]], 
+
+    "oldest":["no longer undo"], 
+    "newest":["the newest condition"], 
+    "colliding":["colliding"], 
+    "judged":["already judged"], 
+
+    "get?":["get this piece?", [73, 30]], 
+    "step?":["step over this piece?", [47, 30]], 
+    "abondon?":["abondon your turn?", [55, 30]], 
+    "finish?":["end this game?",[60, 30]], 
+    "reset?":["reset the board?", [55, 30]], 
+
+    "Yes":["Yes", [55, 93]], 
+    "No":["No", [190, 93]], 
+
+    "massage_pos":[[10, 481], [10, 511], [10, 541], [10, 571], [10, 601]], 
+    "parameter_pos":[[111, 7], [1042, 601], [973, 37], [973, 7]], 
+    "image_pos":[1017, 67]
+}
