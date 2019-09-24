@@ -26,6 +26,6 @@ This app will allow you to practice or play cerke with your friends easily.
 - I key initializes the pieces' position.
 - T key declares *taxt* and *tymorko*.(Choose *taxt*, output score note)
 - By A key, you can abondon the current turn.
-- By changing "language" of setting.json, you can play in any language you like.(You need font file and json file.)
+- By changing the value of "language" in `setting.json`, you can play in any language you like.(You need font file and json file.)
 - Generates score note.(but can't record more than 2 judgement)
 
