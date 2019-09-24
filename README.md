@@ -1,31 +1,31 @@
-# cerke_code
+# Cerke_code
+![language:Python](https://img.shields.io/badge/language-Python-blue.svg) ![license:MIT](https://img.shields.io/badge/license-MIT-blue.svg)  
+A desktop app of cerke, a kind of board game.  
+This app will allow you to practice or play cerke with your friends easily.
 
-机戦のアプリをpygameで書いています。2019/07/11時点でbeta_ver2が最新。
+## Screenshots
+<img src="https://user-images.githubusercontent.com/49038898/65514457-49b02300-df18-11e9-934b-0a07160a3890.png" alt="playing image" width="400" height="240">  <img src="https://user-images.githubusercontent.com/49038898/65514484-5765a880-df18-11e9-8a76-ec1c77569edd.png" alt="playing image" width="400" height="240">
 
-## To 遊んでみたい人
-- PC用です。
-- fontフォルダ・imageフォルダ・moduleフォルダに加えてWinユーザーの方々はexeファイルを、非Winユーザーの方々はmain.pyをダウンロードして同じ場所において走らせると動作するはずです。
-- このアプリによる損害や賠償などについて、私は一切責任を負えません。
+## Requirement
+- pygame(1.9.6) (only Mac users)
 
-### 機能説明
+## Usage
+- **For PC only**
+- (if you are Win user) download `/font`, `/image`, `/lang_setup`, `/module`, `setting.json` and `.exe` file.
+- (if you are not Win user) download`/font`, `/image`, `/lang_setup`, `/module`, `setting.json` and `.py` file.
+- The rules of cerke is [here](https://sites.google.com/view/cet2kaik/%E7%B5%B1%E4%B8%80%E8%A6%8F%E5%89%87?authuser=0).(for English speaker, [here](https://sites.google.com/view/cet2kaik/the-standardized-rule-in-english?authuser=0))
+- You can use this app like as you play with real set.
 
-- メッセージログを左下のエリアに配置しています。
-- 右上のエリアで現在の手番・レート・選択している駒の画像と位置が確認できます。
-- ウィンドウのxボタンかEscキーで終了できます。
-- クリックで動かしたい駒を選択でき、rキーで反転、移動先にクリックで駒を動かせます。
-- スペースキーで駒の選択をキャンセルできます。
-- cキーで裁(5D2-5)の結果をメッセージログに表示します。
-- zキーでundoが、qキーでredoができます。(最大10手まで)
-- p, mキーで点数の増減が行えます。
-- 0, 1キーでレートの増減が行えます。
-- aボタンで手番の変更ができます。盤面を変えずに相手に手を渡したい時・駒を取って手番が右上とずれた時などの調整にどうぞ。
-- iキーで駒の配置を初期配置に戻せますが、向きは戻りません。選択→rで地道に戻してください。
-- 既に駒があるところへは駒が動きません。(表示がもろに重なって混乱のもとになるため)
-- setting.jsonのlanguageの部分を変更することで他の言語でも遊べるようになりました。現在は英語(english)とリパライン語(lineparine)に対応。
+## Feature
+- Esc key exit program.
+- Space key cancels any choice.
+- C key judges with the *stickes*.
+- Z key undoes, and Q key redoes.(max 10 times)
+- P key and M key change score.
+- 0 key and 1 key change rate.
+- I key initializes the pieces' position.
+- T key declares *taxt* and *tymorko*.(Choose *taxt*, output score note)<-new!
+- By A key, you can abondon the current turn.
+- By changing "language" of setting.json, you can play in any language you like.(You need font file and json file.)
+- Generates score note.(but can't record more than 2 judgement)
 
-
-## これから実装したい機能
-- 棋譜の生成
-- GUI化
-- オンライン対戦
-- 1Pプレイ
