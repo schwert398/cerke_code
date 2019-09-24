@@ -13,7 +13,7 @@ This app will allow you to practice or play cerke with your friends easily.
 - **For PC only**
 - (if you are Win user) download `/font`, `/image`, `/lang_setup`, `/module`, `setting.json` and `.exe` file.
 - (if you are not Win user) download`/font`, `/image`, `/lang_setup`, `/module`, `setting.json` and `.py` file.
-- The rules of cerke is [here](https://sites.google.com/view/cet2kaik/%E7%B5%B1%E4%B8%80%E8%A6%8F%E5%89%87?authuser=0).(for English speaker, [here](https://sites.google.com/view/cet2kaik/the-standardized-rule-in-english?authuser=0))
+- The rules of cerke is [here](https://sites.google.com/view/cet2kaik/%E7%B5%B1%E4%B8%80%E8%A6%8F%E5%89%87?authuser=0). (for English speaker, [here](https://sites.google.com/view/cet2kaik/the-standardized-rule-in-english?authuser=0))
 - You can use this app like as you play with real set.
 
 ## Feature
@@ -24,7 +24,7 @@ This app will allow you to practice or play cerke with your friends easily.
 - P key and M key change score.
 - 0 key and 1 key change rate.
 - I key initializes the pieces' position.
-- T key declares *taxt* and *tymorko*.(Choose *taxt*, output score note)<-new!
+- T key declares *taxt* and *tymorko*.(Choose *taxt*, output score note)
 - By A key, you can abondon the current turn.
 - By changing "language" of setting.json, you can play in any language you like.(You need font file and json file.)
 - Generates score note.(but can't record more than 2 judgement)
