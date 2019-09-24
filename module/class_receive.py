@@ -49,6 +49,9 @@ class Receive:
                     return "decrease"
                 if event.key == K_1:
                     return "increase"
+                # tで終季
+                if event.key == K_t:
+                    return "taxt"
                 return None
             # マウス座標判定
             if event.type == MOUSEBUTTONDOWN and event.button == 1:
@@ -65,7 +68,7 @@ class Receive:
                         ret_h = h
                         break
                 if x_flag and y_flag:    # 重なるマス目があった場合
-                    return (ret_v, ret_h)
+                    return ret_v, ret_h
                 else:
-                    return (x, y)
+                    return x, y
     

@@ -1,0 +1,36 @@
+{
+    "FontFile":"jietoden_liparxe.ttf", 
+    "FontSize":17, 
+    
+    "caption":"cerke", 
+    
+    "black":"deln", 
+    "red":"ludiex", 
+    
+    "turn":["dire:", [914, 7]], 
+    "red_score":["ludiexe'd yst edioll:", [10, 7]], 
+    "black_score":["delne'd yst edioll:", [914, 601]], 
+    "rate":["leium:", [914, 37]], 
+    "choosing":["liaxe nio texten:", [914, 67]], 
+    "point":["kinellavor:", [914, 167]], 
+    
+    "piece_space":["eski tark", [1031, 167]], 
+    "none":["iu", [1031, 167]], 
+    
+    "oldest":["Cene niv il", "      chajovon ny malst"], 
+    "newest":["Cene niv il", "      labackon malst"], 
+    "colliding":["waxlarve xelvin mol", "      fal fgir(dusnij)"], 
+    "judged":["Edixa ciurles xelvin"], 
+    
+    "get?":["Co icve fqiu laver?", [45, 35]], 
+    "step?":["Co es fqiu laver'd semorko'i?",[5, 35]], 
+    "finish?":["Co taxt?(leium ipes)", [40, 30]],
+    "reset?":["Co farnenoves laver'd kinellavor?", [5, 30]], 
+
+    "Yes":["ja", [57, 93]], 
+    "No":["niv", [188, 93]], 
+    
+    "massage_pos":[[10, 481], [10, 511], [10, 541], [10, 571], [10, 601]], 
+    "parameter_pos":[[225, 7], [1109, 601], [982, 37], [972, 7]], 
+    "image_pos":[977, 92]
+}
