@@ -22,7 +22,7 @@ Installing pygame (after installing Python):
 - Operate like as you play with real set.
 
 ## Feature
-- Esc key exit program.
+- Esc key terminates program.
 - Space key cancels any choice.
 - C key judges with the *stickes*.
 - Z key undoes, and Q key redoes.(max 10 times)
