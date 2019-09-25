@@ -9,7 +9,7 @@ This app will allow you to practice or play cerke with your friends easily.
 ## Requirement
 This app requires following to run (if you don't use `.exe`file).
 - [Python](https://www.python.org) 3.7.3+
-- pygame 1.9.6  
+- [pygame](https://www.pygame.org/wiki/GettingStarted) 1.9.6  
 
 Installing pygame (after installing Python):  
 ``` python -m pip install pygame ```
