@@ -1,5 +1,5 @@
 # Cerke_code
-![language:Python](https://img.shields.io/badge/language-Python-blue.svg) ![license:MIT](https://img.shields.io/badge/license-MIT-blue.svg)  
+![language:Python3](https://img.shields.io/badge/language-Python-blue.svg) ![license:MIT](https://img.shields.io/badge/license-MIT-blue.svg)  
 A desktop app of cerke, a kind of board game.  
 This app will allow you to practice or play cerke with your friends easily.
 
