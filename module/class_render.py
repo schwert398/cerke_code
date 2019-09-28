@@ -2,7 +2,7 @@ import pygame
 from pygame.locals import *
 from module.class_constant import *
 from module.class_variable import *
-from module.class_perge import *
+#from module.class_perge import *
 
 class Render:
     @staticmethod
