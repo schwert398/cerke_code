@@ -1,0 +1,20 @@
+{
+    "Language":"select from english or lineparine.(all lower)", 
+    "language":"english",
+
+    "Record":"Want to record notes of the game?", 
+    "record":"on", 
+    
+    "game":{
+        "first_hand":"black", 
+        "your_color":"black", 
+        "black_score":20, 
+        "point_sum":40
+    }, 
+    
+    "other":{
+        "background_color":[224, 255, 255], 
+        "space_color":[255, 255, 122], 
+        "hand_color":[255, 180, 255]
+    }
+}
