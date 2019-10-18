@@ -4,6 +4,7 @@ import pygame
 from pygame.locals import *
 
 from module.constant import *
+from module.variable import *
 
 
 def locator(point):
@@ -22,53 +23,37 @@ def locator(point):
     return dest_x, dest_y
 
 
-class MessageBox:
-    def __init__(self, size, color):
-        self.base_window = pygame.Surface(size, flags=pygame.SRCALPHA)
-        self.base_window.set_alpha(0)
-        self.base_window.fill((0, 0, 0, 127))
-        self.base_window.fill(color, (1, 1, size[0]-2, size[1]-2))
+class Window:
+    base_window = pygame.Surface((280, 140), flags=pygame.SRCALPHA)
+    base_window.set_alpha(0)
+    base_window.fill((0, 0, 0, 127))
+    base_window.fill((247, 247, 232, 7), (1, 1, 278, 138))
+    button = pygame.Surface((130, 50), flags=pygame.SRCALPHA)
+    button.set_alpha(0)
+    button.fill((0, 0, 0))
+    button.fill((245, 245, 230), (1, 1, 128, 48))
 
+    def __init__(self, font_tuple, yes_no_list):
+        self.question = font_tuple[0]
+        self.question_pos_x = font_tuple[1][0]
+        self.question_pos_y = font_tuple[1][1]
+        self.yes = yes_no_list["Yes"][0]
+        self.yes_pos_x = yes_no_list["Yes"][1][0]
+        self.yes_pos_y = yes_no_list["Yes"][1][1]
+        self.no = yes_no_list["No"][0]
+        self.no_pos_x = yes_no_list["No"][1][0]
+        self.no_pos_y = yes_no_list["No"][1][1]
 
-class InputBox(MessageBox):
-    def __init__(self, size, color):
-        super().__init__(())
-
-
-# message window to ask a two-choice problem
-class Window(MessageBox):
-    BUTTON = pygame.Surface((130, 50), flags=pygame.SRCALPHA)
-    BUTTON.set_alpha(0)
-    BUTTON.fill((0, 0, 0))
-    BUTTON.fill((245, 245, 230), (1, 1, 128, 48))
-
-    """
-    ques_tuple: (pygame.Font, (pos_x, pos_y))
-    choice_list: {"Yes": (pygame.Font, (pos_x, pos_y)
-                  "No": (pygame.Font, (pos_x, pos_y)}
-    """
-    def __init__(self, size, color, ques_tuple: tuple, choice_list):
-        super().__init__(size, color)
-        self.ques = ques_tuple[0]
-        self.ques_pos_x = ques_tuple[1][0]
-        self.ques_pos_y = ques_tuple[1][1]
-        self.yes = choice_list["Yes"][0]
-        self.yes_pos_x = choice_list["Yes"][1][0]
-        self.yes_pos_y = choice_list["Yes"][1][1]
-        self.no = choice_list["No"][0]
-        self.no_pos_x = choice_list["No"][1][0]
-        self.no_pos_y = choice_list["No"][1][1]
-
-    def render(self, screen, point) -> bool:
+    def render(self, screen, point):
         dest_x, dest_y = locator(point)
 
         while True:
-            screen.blit(self.base_window, (dest_x, dest_y))
-            screen.blit(Window.BUTTON, (dest_x+8, dest_y+80))
-            screen.blit(Window.BUTTON, (dest_x+142, dest_y+80))
+            screen.blit(Window.base_window, (dest_x, dest_y))
+            screen.blit(Window.button, (dest_x+8, dest_y+80))
+            screen.blit(Window.button, (dest_x+142, dest_y+80))
             screen.blit(
-                self.ques,
-                (dest_x + self.ques_pos_x, dest_y + self.ques_pos_y)
+                self.question,
+                (dest_x + self.question_pos_x, dest_y + self.question_pos_y)
             )
             screen.blit(
                 self.yes,
@@ -88,7 +73,7 @@ class Window(MessageBox):
                         pygame.quit()
                         sys.exit()
                     if event.key == K_SPACE:
-                        return False
+                        return None
                     if event.key == K_y:
                         return True
                     if event.key == K_n:
