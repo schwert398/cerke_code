@@ -58,23 +58,18 @@ def redo(hand: str, piece_obj_list: list, turn: int):
 
 class Process:
     GET_WINDOW = Window(
-        (280, 140), (247, 247, 232, 7),
         FontSet.WINDOW_MSG_DICT["get?"], FontSet.YES_NO_DICT
     )
     STEP_WINDOW = Window(
-        (280, 140), (247, 247, 232, 7),
         FontSet.WINDOW_MSG_DICT["step?"], FontSet.YES_NO_DICT,
     )
     ABONDON_WINDOW = Window(
-        (280, 140), (247, 247, 232, 7),
         FontSet.WINDOW_MSG_DICT["abondon?"], FontSet.YES_NO_DICT,
     )
     FINISH_WINDOW = Window(
-        (280, 140), (247, 247, 232, 7),
         FontSet.WINDOW_MSG_DICT["finish?"], FontSet.YES_NO_DICT,
     )
     RECORD_WINDOW = Window(
-        (280, 140), (247, 247, 232, 7),
         FontSet.WINDOW_MSG_DICT["record?"], FontSet.YES_NO_DICT,
     )
 
