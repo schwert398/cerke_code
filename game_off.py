@@ -67,5 +67,6 @@ def main():
             continue
         piece_obj_list, queue_holder, flag_box, parameter_box = ret
 
+
 if __name__ == "__main__":
     main()
