@@ -1,5 +1,8 @@
 *.json
 *.pycstat
+*.spec
+/build
+/dist
 /.vscode
 /__pycache__
 /module/__pycache__
