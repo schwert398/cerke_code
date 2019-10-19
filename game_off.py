@@ -27,7 +27,7 @@ def main():
 
     # generate flags (these are all either of False or int)
     selecting = False   # if selecting a piece (int shows index)
-    flag_judge = False  # if judged in the turn (int shows judgement)
+    flag_judge = False  # if judged in the turn (int shows num of judgement)
     flag_step = False   # if stepped over a piece in the turn (int shows index)
     flag_box = [selecting, flag_judge, flag_step]
 
