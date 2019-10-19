@@ -1,8 +1,8 @@
 {
-    "Language":"select from english or lineparine.(all lower)", 
+    "language":"select from english or lineparine.(all lower)", 
     "language":"english",
 
-    "Record":"Want to record notes of the game?", 
+    "record":"Want to record notes of the game?", 
     "record":"on", 
     
     "game":{
