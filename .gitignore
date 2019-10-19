@@ -1,0 +1,9 @@
+*.json
+*.pycstat
+/.vscode
+/__pycache__
+/module/__pycache__
+!/lang_setup
+!setting.json
+class_test.py
+cerke_offline.py
