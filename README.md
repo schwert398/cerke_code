@@ -35,5 +35,4 @@ Installing pygame (after installing Python):
 - Generates score note.(but can't record more than 2 judgement)
 
 ## CAUTION
-- Be careful not to get opponent's piece over than 24 times. (for more details, look [here](https://github.com/schwert398/cerke_code/issues/6))
 - Generated score notes are overwritten to the same file and the data that existed in the file are lost. To prevent this, change the file name or copy the data. (This problem will be fixed at the next update)
