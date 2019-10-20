@@ -3,7 +3,7 @@
 A desktop app of cerke, a kind of board game.  
 This app will allow you to practice or play cerke with your friends easily.
 
-**SORRY, SOME CRITICAL BUGS ARE FOUND. PLEASE USE VERSION1.0 BRANCH**
+**SORRY, SOME CRITICAL BUGS ARE FOUND. PLEASE WAIT FOR FIX.**
 
 ## Screenshots
 <img src="https://user-images.githubusercontent.com/49038898/65514457-49b02300-df18-11e9-934b-0a07160a3890.png" alt="playing image" width="250" height="140">  <img src="https://user-images.githubusercontent.com/49038898/65514484-5765a880-df18-11e9-8a76-ec1c77569edd.png" alt="playing image" width="250" height="140">
