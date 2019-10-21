@@ -9,7 +9,7 @@ This app will allow you to practice or play cerke with your friends easily.
 <img src="https://user-images.githubusercontent.com/49038898/65514457-49b02300-df18-11e9-934b-0a07160a3890.png" alt="playing image" width="250" height="140">  <img src="https://user-images.githubusercontent.com/49038898/65514484-5765a880-df18-11e9-8a76-ec1c77569edd.png" alt="playing image" width="250" height="140">
 
 ## Requirement
-This app requires following to run (if you don't use `.exe`file).
+This app requires following to run
 - [Python](https://www.python.org) 3.7.3+
 - [pygame](https://www.pygame.org/wiki/GettingStarted) 1.9.6  
 
@@ -18,8 +18,7 @@ Installing pygame (after installing Python):
 
 ## Usage
 - **For PC only**
-- (if you are Win user) download `/font`, `/image`, `/lang_setup`, `/module`, `setting.json` and `.exe` file.
-- (if you are not Win user) download`/font`, `/image`, `/lang_setup`, `/module`, `setting.json` and `.py` file.
+- Download `/font`, `/image`, `/lang_setup`, `/module`, `setting.json` and `.py` file.
 - The rules of cerke is [here](https://sites.google.com/view/cet2kaik/%E7%B5%B1%E4%B8%80%E8%A6%8F%E5%89%87?authuser=0). (for English speaker, [here](https://sites.google.com/view/cet2kaik/the-standardized-rule-in-english?authuser=0))
 - Operate like as you play with real set.
 
